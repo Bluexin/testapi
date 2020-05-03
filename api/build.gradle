@@ -2,8 +2,8 @@ plugins {
     id 'java-library'
 }
 
-group 'org.example'
-version '1.0-SNAPSHOT'
+group rootProject.group
+version rootProject.version
 
 repositories {
     mavenCentral()
@@ -16,7 +16,6 @@ publishing {
     publications {
         maven(MavenPublication) {
             artifactId = "${rootProject.name}-api"
-//            from components.java
         }
     }
 }
