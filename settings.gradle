@@ -1,0 +1,5 @@
+rootProject.name = 'testapi'
+
+include ":api"
+project(':api').name = "${rootProject.name}-api"
+
